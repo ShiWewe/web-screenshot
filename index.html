@@ -308,5 +308,41 @@
 				<div>43、http2.0优势</div>
       </p>
     </details>
+		<hr>
+		<details id="v3">
+      <summary>简述Vue2和Vue3的一些区别(vue3优势)</summary>
+      <p>
+				<div>
+					1、重构响应式系统,使用Proxy替换Object.defineProperty,所以不兼容IE11
+					<div>Proxy优势:</div>
+					<div>
+						Proxy可直接监听数组类型的数据变化,Proxy提供了apply、ownKeys、has等13种拦截器方法
+						<div>
+							而Object.defineProperty需要重写数组7个方法(push,pop,shift,unshift,reverse,sort,splice)进行监听
+						</div>
+					</div>
+				</div>
+				<div>
+					2、新增Composition API(组合式 API),更好的逻辑复用和代码组织
+				</div>
+				<div>
+					Vue2 中只能固定用 data、computed、methods 等选项组织代码,vue3同一功能的代码集中不至于像vue2一样太分散
+				</div>
+				<div>
+					3、重构Virtual DOM,添加了patchFlag对动态内容进行标记
+				</div>
+				<div>
+					在Vue2中,每次更新diff,都是全量对比,Vue3则只对比带有标记的,这样大大减少了非动态内容的对比消耗,提高性能
+				</div>
+				<div>
+					4、用 setup 代替了 beforeCreate 和 created 这两个生命周期,
+				</div>
+				<div>
+					setup 执行时机是在 beforeCreate 之前执行,setup中this指向undefined
+				</div>
+				<div>5、用ref,reactive等定义变量,不同的是ref用于基本数据类型,而reactive是用于复杂数据类型,比如对象和数组</div>				
+				<div>6、Vue3对typescript的支持度更好</div>				
+      </p>
+    </details>
   </body>
 </html>
