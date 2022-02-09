@@ -37,14 +37,7 @@
     <!-- windows phone 点击无高光 -->
     <meta name="msapplication-tap-highlight" content="no" />
     <title>标题</title>
-    <style>
-			* {
-				padding:0;
-			}
-      body {
-        padding: 10px;
-      }
-    </style>
+		<link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <details>
@@ -65,7 +58,7 @@
 				<div>13、数组去重</div>
 				<div>14、介绍防抖和节流</div>
 				<div>15、垃圾回收机制,常用的方案</div>
-				<div>16、介绍DFS和BFs</div>
+				<div>16、介绍DFS和BFS</div>
       </p>
     </details>
 		<hr>
@@ -348,5 +341,16 @@
 				<div>6、Vue3对typescript的支持度更好</div>				
       </p>
     </details>
+
+		<div id="load">
+			<div id="box">
+				<div id="pig"></div>
+				<span>Loading...</span>
+			</div>
+		</div>
+
+		<div title="刷新" id="refresh" onclick="handleReload()"></div>
+
+		<script src="./index.js"></script>
   </body>
 </html>

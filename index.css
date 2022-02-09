@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+}
+body {
+  padding: 10px;
+  padding-bottom: 40px;
+}
+#load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+#box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pig {
+  width: 128px;
+  height: 128px;
+  background-image: url(./img/pig.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: ani 0.8s infinite linear;
+}
+#pig + span {
+  font-size: 26px;
+  color: #fff;
+}
+#refresh {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 32px;
+  height: 32px;
+  background-image: url(./img/refresh.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@keyframes ani {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
