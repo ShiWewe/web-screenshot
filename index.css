@@ -4,6 +4,7 @@
 body {
   padding: 10px;
   padding-bottom: 40px;
+  overflow: auto;
 }
 #load {
   position: absolute;
