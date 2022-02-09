@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话,忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit" />
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 针对手持设备优化,主要是针对一些老的不识别viewport的浏览器,比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320" />
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait" />
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes" />
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true" />
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application" />
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app" />
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>题</title>
+    <style>
+			* {
+				padding:0;
+			}
+      body {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <details>
+      <summary>好再来</summary>
+      <p>
+				<div>1、vue的生命周期</div>
+				<div>2、如何在vue模版中访问用户自定义的全局变里</div>
+				<div>3、哪些情况使用动态参数,哪些情况下使用计算属性</div>
+				<div>4、js实现一个队列</div>
+				<div>5、介绍动态组件和异步组件</div>
+				<div>6、箭头函数和普通函数区别</div>
+				<div>7、介绍mixins自定义选项</div>
+				<div>8、介绍异步更新dom</div>
+				<div>9、vue如何追踪数据变化</div>
+				<div>10、写一个柯理化函数</div>
+				<div>11、用poromise.实现ajax</div>
+				<div>12、js继承</div>
+				<div>13、数组去重</div>
+				<div>14、介绍防抖和节流</div>
+				<div>15、垃圾回收机制,常用的方案</div>
+				<div>16、介绍DFS和BFs</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>鲸牌</summary>
+      <p>
+				<div>1、列举块级标签,行内标签</div>
+				<div>2、移动端兼容性,IE兼容</div>
+				<div>3、事件冒泡</div>
+				<div>4、边距重叠解决方案(BFC)</div>
+				<div>5、未知宽高元素,水平垂直居中</div>
+				<div>6、闭包,及其优劣</div>
+				<div>7、原型,原型链</div>
+				<div>8、vue生命周期,及功能</div>
+				<div>9、首屏加载过慢,优化</div>
+				<div>10、vue组件通讯方式</div>
+				<div>11、vue2和3,diff算法区别</div>
+				<div>12、keep-alive</div>
+				<div>13、vue路由导航钩子,组件钩子</div>
+				<div>14、vuex哪些属性</div>
+				<div>15、setTimeout.不准</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>酷开科技</summary>
+      <p>
+				<div>1、js哪些基础数据类型,symbol作用</div>
+				<div>2、js哪些内置对象</div>
+				<div>3、dom的理解(获取,新增,删除等原生js方法)</div>
+				<div>4、数组的API介绍</div>
+				<div>5、axios 介绍</div>
+				<div>6、vue3.0介绍</div>
+				<div>7、directive理解(内置指令和自定义指令)</div>
+				<div>8、混入(mixins)用法</div>
+				<div>9、data,computed,watch 区别</div>
+				<div>10、websockts 心跳机制做法</div>
+				<div>11、js监听网络连接或断开</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>米聚</summary>
+      <p>
+				<div>1、Vue$set实现原理</div>
+				<div>2、vue路由传参query和params方式的区别</div>
+				<div>3、vue刷新页面,但是页面保留某些教据,怎么做</div>
+				<div>4、localstorage设置过期时间,怎么做</div>
+				<div>5、路由hash和history模式区别,生成环境出现404处理</div>
+				<div>6、vue优化</div>
+				<div>7、promise.all/race</div>
+				<div>8、数组去重</div>
+				<div>9、实现在1-100数字中,随机10个不重复的数字</div>
+				<div>10、水平垂直居中</div>
+				<div>11、vue路由导航钩子,组件钩子</div>
+				<div>12、vuex哪些属性</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>胜天易融</summary>
+      <p>
+				<div>1、介绍虚拟dom</div>
+				<div>2、vue生命周期</div>
+				<div>3、vue中key作用</div>
+				<div>4、dom异步更新,$nextick.原理</div>
+				<div>5、watch,computed区别</div>
+				<div>6、组件间通讯</div>
+				<div>7、路由传参方式</div>
+				<div>8、路由懒加载方式</div>
+				<div>9、路由守卫</div>
+				<div>10、action和mutations区别</div>
+				<div>11、vue渲染过程</div>
+				<div>12、promise介绍</div>
+				<div>13、封装http请求,原生ajax</div>
+				<div>14、深拷贝实现</div>
+				<div>15、forEach和map区别</div>
+				<div>16、闭包</div>
+				<div>17、防抖节流介绍</div>
+				<div>18、new做的事情</div>
+				<div>19、js继承</div>
+				<div>20、vue3和2的区别</div>
+				<div>21、Css盒子模型</div>
+				<div>22、bfc介绍,怎么形成bfc</div>
+				<div>23、优化方案</div>
+				<div>24、自定义指令</div>
+				<div>25、s1ot原理</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>小西科技</summary>
+      <p>
+				<div>1、HTML5新特性</div>
+				<div>2、Css3新特性</div>
+				<div>3、var和let区别,let申明的变量不在window中</div>
+				<div>4、块级作用域,作用域链</div>
+				<div>5、不申明打印变量会报错</div>
+				<div>6、基本数据类型</div>
+				<div>7、引用数据类型,深浅拷贝,方式</div>
+				<div>8、判断变量是否是数组,效率</div>
+				<div>9、promise介绍</div>
+				<div>10、reslove和return</div>
+				<div>11、原生ajax介绍</div>
+				<div>12、获取dom,原生js</div>
+				<div>13、vue生命周期</div>
+				<div>14、vue通讯方式</div>
+				<div>15、watch,computed区别</div>
+				<div>16、git指令,冲突解决,合并代码等</div>
+				<div>17、vue路由守卫,使用场景</div>
+				<div>18、前端优化方案</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>新视云</summary>
+      <p>
+				<div>1、实现0.5像素的边框</div>
+				<div>2、脱离文档流方法</div>
+				<div>3、跨域方法</div>
+				<div>4、TCP三次握手</div>
+				<div>5、js异步改成同步方式</div>
+				<div>6、promise几种状态</div>
+				<div>7、组件通讯方式</div>
+				<div>8、详情A -> 详情B,内容变化,生命周期监听</div>
+				<div>9、this指向</div>
+				<div>10、判断数据类型方式</div>
+				<div>11、双向数据绑定原理</div>
+				<div>12、循环对象方式,for of循环对象</div>
+				<div>13、js继承</div>
+				<div>14、es6混合模式</div>
+				<div>15、commonjs amd cmd</div>
+				<div>16、vue懒加载</div>
+				<div>17、vue路由拦截</div>
+				<div>18、es6数组API</div>
+				<div>T9、vuex刷新消失,处理</div>
+				<div>20、不设置cookie过期时间,保存多久(浏览器关闭就消失)</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>云账房</summary>
+      <p>
+				<div>1、印象中难点</div>
+				<div>2、样式中常用到的布局</div>
+				<div>3、CSS性能优化方案</div>
+				<div>4、介绍数据类型</div>
+				<div>5、null和undefined区别,两者转额字结果</div>
+				<div>6、箭头函额和普通函数区别</div>
+				<div>7、介绍promise.all, promise.race</div>
+				<div>8、介绍异步更新dom</div>
+				<div>9、vue通讯机制</div>
+				<div>10、vuex介绍</div>
+				<div>11、vue2和vue3区别</div>
+				<div>12、跨域的解决方案</div>
+				<div>13、cookie和 session 区别</div>
+				<div>14、对组件化的理解,封装过组件?</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>智器云</summary>
+      <p>
+				<div>1、介绍目前在做的项目</div>
+				<div>2、项目中三维地图介绍</div>
+				<div>3、哪些图表插件,大屏界面自适应方案</div>
+				<div>4、vw,vh</div>
+				<div>5、介绍flex布局,order默认值0</div>
+				<div>6、盒子模型</div>
+				<div>7、介绍http状态码</div>
+				<div>8、css3里的动画@keyframes,transform属性</div>
+				<div>9、怎么自定义动画,图片从0度转360度</div>
+				<div>10、animation-timing-function</div>
+				<div>11、背景颜色,线性渐变,怎么设置属性值</div>
+				<div>12、跨域,同源箫略,nginx跨域配置</div>
+				<div>13、重绘、回流</div>
+				<div>14、减少回流方案,浏览器也有内置优化</div>
+				<div>15、webpack配置</div>
+				<div>16、AST象语法树</div>
+				<div>17、为什么Css动画比js好</div>
+				<div>18、浏览器分层层级z-index概念</div>
+				<div>T9、数组的方法实现队列</div>
+				<div>20、数组reduce,参数介绍,空数组使用报错</div>
+				<div>21、es6学习</div>
+				<div>22、平时编码规范</div>
+				<div>23、promise理解,里面的静态方法(all,race)</div>
+				<div>24、for in 和 for of 区别</div>
+				<div>25、迭代器</div>
+				<div>26、Set和Map怎么使用等</div>
+				<div>27、打印对象里面的属性值排序,基于ASCUII码</div>
+				<div>28、vue路由模式原理,各采用哪种Api</div>
+				<div>29、双向数据绑定原理</div>
+				<div>30、proxy优势</div>
+				<div>31s diff算法</div>
+				<div>32、广度优先搜索(BFS)和深度优先搜索(DFS)算法</div>
+      </p>
+    </details>
+		<hr>
+		<details>
+      <summary>网眼webeye</summary>
+      <p>
+				<div>1、简单介绍盒子模型</div>
+				<div>2、html5里的语义化标签(列举,优点)</div>
+				<div>3、块级元素和行内元素</div>
+				<div>4、层级上下文</div>
+				<div>5、伪类和伪元素(列举,区别)</div>
+				<div>6、position取值</div>
+				<div>7、flex布局中 align-items和align-content的区别</div>
+				<div>8、适配、px,em,rem的区别</div>
+				<div>9、垂直居中方式</div>
+				<div>10、原型链理解,继承</div>
+				<div>11、箭头函数和普通函数区别</div>
+				<div>12、class和function区别</div>
+				<div>13、类数组型数组的区别,类数组怎么转数组</div>
+				<div>14、跨域方案,JSONP原理</div>
+				<div>15、防抖和节流区别</div>
+				<div>16、闭包</div>
+				<div>17、事件委托(事件代理)</div>
+				<div>18、有没有webpack配置</div>
+				<div>19、性能优化</div>
+				<div>20、图片懒加载方案</div>
+				<div>21、v-modal实现</div>
+				<div>22、vue通信方式</div>
+				<div>23、vuex分模块做法</div>
+				<div>24、diff算法时间复杂度</div>
+				<div>25、v-if 和 v-show 区别</div>
+				<div>26、vue路由模式,实现原理</div>
+				<div>27、路由拦截</div>
+				<div>28、同源策略介绍</div>
+				<div>29、重绘和回流(重排)</div>
+				<div>30、强缓存和协商缓存</div>
+				<div>31、斐波那契数列时间复杂度</div>
+				<div>32、宏,微任务</div>
+				<div>33、promise.all介绍</div>
+				<div>34、vue3.0和vue2.0区别,最大的优化区别(proxy) ,不兼容ie11</div>
+				<div>35、proxy比object.defineproperty好处</div>
+				<div>36、vue3在diff做的优化</div>
+				<div>37、平时浏览哪些技术网站等</div>
+				<div>38、路由,按钮权限</div>
+				<div>39、关注哪些新技术</div>
+				<div>40、手写冒泡</div>
+				<div>41、http和https区别</div>
+				<div>42、视频弹幕怎么实时呈现</div>
+				<div>43、http2.0优势</div>
+      </p>
+    </details>
+  </body>
+</html>
