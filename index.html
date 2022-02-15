@@ -363,7 +363,29 @@
 				</div>
 			</p>
 		</details>
-
+		<hr>
+		<details>
+			<summary>vue中为什么data是一个函数</summary>
+			<p>
+				<div>
+					Object是引用数据类型,如果不用function返回,每个组件的data都是内存的同一个地址,一个数据改变了其他也改变了。
+					JavaScript只有函数构成作用域(注意理解作用域,只有函数{}构成作用域,对象的{}以及if(){}都不构成作用域),
+					<mark>data是一个函数时,每个组件实例都有自己的作用域,每个实例相互独立,组件直接也不会相互影响。</mark>
+				</div>
+			</p>
+		</details>
+		<hr>
+		<details>
+			<summary>vue中key作用</summary>
+			<p>
+				<div>
+					<div>key是为Vue中vnode的唯一标记,</div>
+					<div>Vue为了高效地渲染元素,默认会复用已有元素而不是重新渲染</div>
+					<div>通过这个key,Vue的虚拟DOM算法操作可以更准确、更快速,</div>
+					<div>因为带key可以就地复用已有的元素,提高效率</div>
+				</div>
+			</p>
+		</details>
 		<div id="load">
 			<div id="box">
 				<div id="pig"></div>
