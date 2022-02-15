@@ -311,7 +311,7 @@
       </p>
     </details>
 		<hr>
-		<details id="v3">
+		<details>
       <summary>简述Vue2和Vue3的一些区别(vue3优势)</summary>
       <p>
 				<div>
@@ -342,10 +342,27 @@
 				<div>
 					setup 执行时机是在 beforeCreate 之前执行,setup中this指向undefined
 				</div>
-				<div>5、用ref,reactive等定义变量,不同的是ref用于基本数据类型,而reactive是用于复杂数据类型,比如对象和数组</div>				
+				<div>5、用ref,reactive等定义变量,不同的是ref用于基本数据类型,而reactive是用于复杂数据类型,比如对象和数组</div>			
 				<div>6、Vue3对typescript的支持度更好</div>				
       </p>
     </details>
+		<hr>
+		<details>
+			<summary>简述nextTick原理</summary>
+			<p>
+				<div>
+					<div>Vue在修改数据后是异步执行DOM更新,使用nextTick可以获取更新后的DOM,</div>
+					<div>例如在VUE中,当我们修改了data中的某一个值后,</div>
+					<div>并不会立即更新到该dom元素中,</div>
+					<div>vue将对更新数据放到watcher的一个异步队列中,</div>
+					<div>只有在当前任务空闲时才会执行watcher队列任务,</div>
+					<div>这就有一个延迟时间,</div>
+					<div>Vue在内部尝试对异步队列优先使用(微任务)原生的Promise.then和MutationObserver,</div>
+					<div>如果不兼容,则使用一些宏任务,setImmediate,setTimeout(fn, 0)代替</div>
+					<div>因此放到nextTick函数后就可以获取该dom元素的最新值了。</div>
+				</div>
+			</p>
+		</details>
 
 		<div id="load">
 			<div id="box">
